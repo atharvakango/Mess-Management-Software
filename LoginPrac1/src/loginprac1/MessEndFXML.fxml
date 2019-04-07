@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="558.0" prefWidth="755.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loginprac1.MessEndFXMLController">
+   <children>
+      <TableView fx:id="myTable" layoutX="4.0" layoutY="174.0" onMouseClicked="#displaySelected" prefHeight="381.0" prefWidth="749.0">
+        <columns>
+          <TableColumn fx:id="endID" prefWidth="61.0" text="ID" />
+          <TableColumn fx:id="endName" prefWidth="180.0" text="Name" />
+            <TableColumn fx:id="endPhn" prefWidth="126.0" text="Phone" />
+            <TableColumn fx:id="endMail" prefWidth="152.0" text="E-Mail" />
+            <TableColumn fx:id="endDate" prefWidth="112.0" text="Date" />
+            <TableColumn fx:id="endMny" prefWidth="116.0" text="Money" />
+        </columns>
+      </TableView>
+      <Label layoutX="23.0" layoutY="22.0" prefHeight="36.0" prefWidth="380.0" text="Mess of these people ends today">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

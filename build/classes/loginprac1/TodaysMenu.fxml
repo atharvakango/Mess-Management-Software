@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="bodybg" stylesheets="@newCascadeStyleSheet.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loginprac1.TodaysMenuController">
+   <children>
+      <Label layoutX="97.0" layoutY="82.0" text="BREAKFAST" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="115.0" layoutY="210.0" text="LUNCH" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="115.0" layoutY="263.0" text="DINNER" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="lunchveg" layoutX="264.0" layoutY="210.0" mnemonicParsing="false" onAction="#onactionlunchveg" text="VEG" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></CheckBox>
+      <CheckBox fx:id="lunchnonveg" layoutX="376.0" layoutY="210.0" mnemonicParsing="false" onAction="#onaction_lunch_nonveg" text="NON-VEG" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></CheckBox>
+      <CheckBox fx:id="dinnerveg" layoutX="264.0" layoutY="263.0" mnemonicParsing="false" onAction="#onactiondinner_veg" text="VEG" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></CheckBox>
+      <CheckBox fx:id="dinnernonveg" layoutX="376.0" layoutY="263.0" mnemonicParsing="false" onAction="#onactiondinner_nonveg" text="NON-VEG" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></CheckBox>
+      <Button layoutX="127.0" layoutY="316.0" mnemonicParsing="false" onAction="#onsave" prefHeight="48.0" prefWidth="106.0" text="Save Changes">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <Button layoutX="421.0" layoutY="316.0" mnemonicParsing="false" onAction="#onback" prefHeight="48.0" prefWidth="92.0" text="Back">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <ChoiceBox fx:id="bf1" layoutX="263.0" layoutY="30.0" onAction="#bf1clicked" prefWidth="150.0" />
+      <ChoiceBox fx:id="bf2" layoutX="263.0" layoutY="83.0" onAction="#bf2clicked" prefWidth="150.0" />
+      <ChoiceBox fx:id="bf3" layoutX="263.0" layoutY="130.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

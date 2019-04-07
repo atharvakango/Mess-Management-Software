@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loginprac1.MyFXMLController">
+   <children>
+      <TextField fx:id="UserName" layoutX="172.0" layoutY="109.0" prefHeight="55.0" prefWidth="221.0" promptText="User Name" />
+      <TextField fx:id="PassWord" layoutX="172.0" layoutY="200.0" prefHeight="63.0" prefWidth="221.0" promptText="Pass Word" />
+      <Button fx:id="Login" layoutX="257.0" layoutY="301.0" mnemonicParsing="false" onAction="#GetData" text="Login" />
+      <Label layoutX="247.0" layoutY="33.0" text="Sign In" underline="true">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="Exit" layoutX="575.0" layoutY="1.0" mnemonicParsing="false" onAction="#OnClose" text="X" />
+   </children>
+</AnchorPane>

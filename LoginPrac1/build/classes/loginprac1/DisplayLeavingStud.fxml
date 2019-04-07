@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="456.0" prefWidth="660.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loginprac1.DisplayLeavingStudController">
+   <children>
+      <TableView fx:id="myTable" layoutX="14.0" layoutY="137.0" prefHeight="309.0" prefWidth="712.0">
+        <columns>
+          <TableColumn fx:id="DLID" minWidth="0.0" prefWidth="5.0" text="ID" />
+          <TableColumn fx:id="DLDate" prefWidth="125.0" text="Date" />
+            <TableColumn fx:id="DLBF1" prefWidth="71.0" text="BF1" />
+            <TableColumn fx:id="DLBF2" prefWidth="76.0" text="BF2" />
+            <TableColumn fx:id="DLBF3" prefWidth="72.0" text="BF3" />
+            <TableColumn fx:id="DLLunch_v" prefWidth="97.0" text="Lunch_V" />
+            <TableColumn fx:id="DLLunch_NV" prefWidth="96.0" text="Lunch_NV" />
+            <TableColumn fx:id="DLDinner_v" prefWidth="81.0" text="Dinner_V" />
+            <TableColumn fx:id="DLDinner_NV" prefWidth="87.0" text="Dinner_NV" />
+        </columns>
+      </TableView>
+      <Label fx:id="labelamount" layoutX="191.0" layoutY="52.0" prefHeight="35.0" prefWidth="101.0" />
+      <Label layoutX="35.0" layoutY="52.0" prefHeight="35.0" prefWidth="143.0" text="Amount to be Paid : ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="depo" layoutX="601.0" layoutY="41.0" mnemonicParsing="false" onAction="#depositreturnedanddelete" prefHeight="46.0" prefWidth="87.0" text="Delete Now" />
+   </children>
+</AnchorPane>

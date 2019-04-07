@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="bodybg" stylesheets="@newCascadeStyleSheet.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loginprac1.StudentTodayController">
+   <children>
+      <CheckBox fx:id="bf1" layoutX="106.0" layoutY="147.0" mnemonicParsing="false" text="BreakFast 1" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></CheckBox>
+      <CheckBox fx:id="bf2" layoutX="264.0" layoutY="147.0" mnemonicParsing="false" text="BreakFast 2" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></CheckBox>
+      <CheckBox fx:id="bf3" layoutX="423.0" layoutY="147.0" mnemonicParsing="false" text="BreakFast 3" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></CheckBox>
+      <CheckBox fx:id="lunch_v" alignment="CENTER" layoutX="181.0" layoutY="209.0" mnemonicParsing="false" onAction="#doThis" text="Veg" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></CheckBox>
+      <CheckBox fx:id="lunch_nv" alignment="CENTER" layoutX="368.0" layoutY="209.0" mnemonicParsing="false" onAction="#doThis1" text="Non-Veg" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></CheckBox>
+      <CheckBox fx:id="dinner_v" layoutX="179.0" layoutY="305.0" mnemonicParsing="false" onAction="#doThis2" text="Veg" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></CheckBox>
+      <CheckBox fx:id="dinner_nv" layoutX="368.0" layoutY="305.0" mnemonicParsing="false" onAction="#doThis3" text="Dinner Non-Veg" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></CheckBox>
+      <Label layoutX="90.0" layoutY="209.0" text="Lunch" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Label layoutX="88.0" layoutY="305.0" text="Dinner" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <TextField fx:id="srchtxt" layoutX="147.0" layoutY="14.0" onAction="#getAndSearch" onKeyReleased="#getAndSearch1" prefHeight="44.0" prefWidth="265.0" promptText="Enter ID of Student">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></TextField>
+      <Button fx:id="srch" layoutX="25.0" layoutY="14.0" mnemonicParsing="false" onAction="#getAndSearch" prefHeight="44.0" prefWidth="96.0" text="Search">
+         <font>
+            <Font name="System Bold Italic" size="19.0" />
+         </font></Button>
+      <Separator layoutX="4.0" layoutY="71.0" prefHeight="17.0" prefWidth="593.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="38.0" layoutY="88.0" prefHeight="32.0" prefWidth="165.0" text="Enter For Student " textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="doneSave" layoutX="447.0" layoutY="342.0" mnemonicParsing="false" onAction="#saveAndExit" prefHeight="44.0" prefWidth="117.0" text="Done for this">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Button>
+      <Label fx:id="nmOfStud" layoutX="220.0" layoutY="96.0" prefHeight="18.0" prefWidth="96.0" text="Label" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Button layoutX="477.0" layoutY="14.0" mnemonicParsing="false" onAction="#onBack" prefHeight="44.0" prefWidth="96.0" text="Back">
+         <font>
+            <Font name="System Bold Italic" size="19.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

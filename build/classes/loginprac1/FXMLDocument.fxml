@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane11" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="bodybg" stylesheets="@newCascadeStyleSheet.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loginprac1.FXMLDocumentController">
+   <children>
+      <TextField fx:id="UserName" layoutX="172.0" layoutY="109.0" prefHeight="55.0" prefWidth="221.0" promptText="UserName">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></TextField>
+      <Button fx:id="Login" layoutX="170.0" layoutY="291.0" mnemonicParsing="false" onAction="#GetData" prefHeight="68.0" prefWidth="221.0" text="Login">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold Italic" size="30.0" />
+         </font></Button>
+      <Label layoutX="247.0" layoutY="33.0" text="Sign In" textFill="WHITE" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="Exit" layoutX="575.0" layoutY="1.0" mnemonicParsing="false" onAction="#OnClose" text="X" />
+      <PasswordField fx:id="PassWord" layoutX="172.0" layoutY="197.0" prefHeight="55.0" prefWidth="221.0" promptText="Password">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></PasswordField>
+      <Label fx:id="No" layoutX="14.0" layoutY="342.0" text="No" textFill="WHITE" underline="true">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

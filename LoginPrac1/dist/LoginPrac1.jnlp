@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="LoginPrac1.jnlp">
+  <information>
+    <title>LoginPrac1</title>
+    <vendor>Atharva</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="LoginPrac1.jar" size="51235" download="eager" />
+    <jar href="lib\derby.jar" size="3104883" download="eager" />
+    <jar href="lib\derbyclient.jar" size="585704" download="eager" />
+    <jar href="lib\derbynet.jar" size="266471" download="eager" />
+    <jar href="lib\dsn.jar" size="19171" download="eager" />
+    <jar href="lib\gimap.jar" size="14769" download="eager" />
+    <jar href="lib\jfoenix-9.0.4.jar" size="2201031" download="eager" />
+    <jar href="lib\mail.jar" size="521000" download="eager" />
+    <jar href="lib\mailapi.jar" size="279893" download="eager" />
+    <jar href="lib\pop3.jar" size="44405" download="eager" />
+    <jar href="lib\servlet-api.jar" size="177568" download="eager" />
+    <jar href="lib\smtp.jar" size="52869" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="LoginPrac1" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="loginprac1.LoginPrac1"  name="LoginPrac1" />
+  <update check="always"/>
+</jnlp>

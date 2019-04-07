@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="531.0" prefWidth="723.0" style="-fx-background-color: #282828;" styleClass="bodybg" stylesheets="@newCascadeStyleSheet.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loginprac1.FXML2Controller">
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <children>
+      <Button fx:id="messEnd" layoutX="52.0" layoutY="295.0" mnemonicParsing="false" onAction="#messEndFunc" prefHeight="83.0" prefWidth="151.0" text="Mess Ends Today" underline="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></Button>
+      <Circle fx:id="circl" fill="RED" layoutX="78.0" layoutY="310.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+      <Button fx:id="LogOut" layoutX="286.0" layoutY="403.0" mnemonicParsing="false" onAction="#Log_out" prefHeight="83.0" prefWidth="151.0" text="Logout" underline="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="add_new" layoutX="286.0" layoutY="31.0" mnemonicParsing="false" onAction="#addNewStud" prefHeight="76.0" prefWidth="151.0" text="Add New Student" underline="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+         <effect>
+            <Blend mode="SRC_ATOP" />
+         </effect></Button>
+      <Button fx:id="search" blendMode="SCREEN" cache="true" layoutX="520.0" layoutY="299.0" mnemonicParsing="false" onAction="#searchStud" prefHeight="76.0" prefWidth="151.0" text="Search" underline="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></Button>
+      <Button fx:id="today_menu" layoutX="52.0" layoutY="136.0" mnemonicParsing="false" onAction="#todayMenu" prefHeight="76.0" prefWidth="151.0" text="Today's Menu" underline="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></Button>
+      <Button fx:id="startToday" layoutX="527.0" layoutY="136.0" mnemonicParsing="false" onAction="#startToday" prefHeight="83.0" prefWidth="151.0" text="Start Today" underline="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></Button>
+      <Label fx:id="notifyLbl" alignment="CENTER" contentDisplay="CENTER" layoutX="66.0" layoutY="295.0" prefHeight="24.0" prefWidth="24.0" stylesheets="@FXML2.css" text="0" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+   <padding>
+      <Insets bottom="222.0" left="222.0" right="222.0" top="222.0" />
+   </padding>
+</AnchorPane>
