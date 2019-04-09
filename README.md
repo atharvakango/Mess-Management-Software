@@ -1,2 +1,2 @@
 # FXApp
-Timepass
+JavaFX desktop application using fxml and Apache Derby Database.
